@@ -87,8 +87,9 @@ func (s phenom) list(ctx context.Context, board string) ([]phenomPosting, error)
 	return postings, nil
 }
 
-// detail fetches one posting's jobDetail and maps it to a Job, returning ok=false when
-// the request fails or carries no description so the caller skips just that posting.
+// detail fetches one posting's jobDetail and maps it to a Job. A 404/410 is evidence the
+// posting is gone and is dropped; every other failed or malformed detail becomes an unreadable
+// marker so a transient Phenom refusal cannot make a live vacancy disappear from the crawl.
 func (s phenom) detail(ctx context.Context, e CompanyEntry, p phenomPosting) (Job, bool) {
 	url := fmt.Sprintf("https://%s/widgets", e.Board)
 	body := map[string]any{
@@ -108,11 +109,14 @@ func (s phenom) detail(ctx context.Context, e CompanyEntry, p phenomPosting) (Jo
 		} `json:"jobDetail"`
 	}
 	if err := s.http.PostJSON(ctx, url, body, &resp); err != nil {
+		if detailUnreadable(err) {
+			return unreadableDetail(p.JobSeqNo, phenomJobURL(e.Board, p.Locale, p.JobSeqNo), e.Company), true
+		}
 		return Job{}, false
 	}
 	job := resp.JobDetail.Data.Job
-	if job.Description == "" {
-		return Job{}, false
+	if strings.TrimSpace(job.Description) == "" {
+		return unreadableDetail(p.JobSeqNo, phenomJobURL(e.Board, p.Locale, p.JobSeqNo), e.Company), true
 	}
 
 	return Job{

@@ -10,10 +10,11 @@ import (
 
 // phenomFake is a JSONPoster that routes by the request body's ddoKey: a refineSearch
 // returns the canned page for its "from" offset, a jobDetail returns the canned detail
-// for its jobSeqNo (or errors when absent, so the adapter skips that posting).
+// for its jobSeqNo (or errors when absent, so the adapter returns an unreadable marker).
 type phenomFake struct {
 	pages   map[int]string
 	details map[string]string
+	errors  map[string]error
 }
 
 func (f phenomFake) PostJSON(_ context.Context, _ string, body, v any) error {
@@ -22,13 +23,35 @@ func (f phenomFake) PostJSON(_ context.Context, _ string, body, v any) error {
 	case "refineSearch":
 		return json.Unmarshal([]byte(f.pages[m["from"].(int)]), v)
 	case "jobDetail":
-		js, ok := f.details[m["jobSeqNo"].(string)]
+		id := m["jobSeqNo"].(string)
+		if err := f.errors[id]; err != nil {
+			return err
+		}
+		js, ok := f.details[id]
 		if !ok {
 			return fmt.Errorf("no detail for %v", m["jobSeqNo"])
 		}
 		return json.Unmarshal([]byte(js), v)
 	}
 	return fmt.Errorf("unexpected ddoKey %v", m["ddoKey"])
+}
+
+func TestPhenomDetailDropsGonePosting(t *testing.T) {
+	fake := phenomFake{
+		pages: map[int]string{0: phenomListPage("GONE")},
+		errors: map[string]error{
+			"GONE": &StatusError{Code: 404},
+		},
+	}
+	jobs, err := NewPhenom(fake).Fetch(context.Background(), CompanyEntry{
+		Company: "DHL", Provider: "phenom", Board: "careers.dhl.com",
+	})
+	if err != nil {
+		t.Fatalf("Fetch: %v", err)
+	}
+	if len(jobs) != 0 {
+		t.Fatalf("len(jobs) = %d, want 0 for a posting Phenom reports gone", len(jobs))
+	}
 }
 
 // phenomListPage renders a refineSearch page from a list of jobSeqNos.
@@ -68,7 +91,8 @@ func TestPhenomFetchPaginatesAndFetchesDetail(t *testing.T) {
 		fake.details[s] = phenomDetail("<p>full body for " + s + "</p>")
 	}
 	fake.details["LAST"] = phenomDetail("<p>last one</p>")
-	// "NODETAIL" has no detail route -> its detail fetch errors and it is skipped.
+	// "NODETAIL" has no detail route. The listing proved it exists, so a failed detail
+	// must be preserved as unreadable rather than looking like a removal.
 
 	jobs, err := NewPhenom(fake).Fetch(context.Background(), CompanyEntry{
 		Company: "DHL", Provider: "phenom", Board: "careers.dhl.com",
@@ -76,16 +100,18 @@ func TestPhenomFetchPaginatesAndFetchesDetail(t *testing.T) {
 	if err != nil {
 		t.Fatalf("Fetch: %v", err)
 	}
-	if want := phenomPageSize + 1; len(jobs) != want {
-		t.Fatalf("len(jobs) = %d, want %d (full page + LAST, NODETAIL skipped)", len(jobs), want)
+	if want := phenomPageSize + 2; len(jobs) != want {
+		t.Fatalf("len(jobs) = %d, want %d (including unreadable NODETAIL)", len(jobs), want)
 	}
 
 	byID := map[string]Job{}
 	for _, j := range jobs {
 		byID[j.ExternalID] = j
 	}
-	if _, present := byID["NODETAIL"]; present {
-		t.Error("NODETAIL should have been skipped (no detail)")
+	if j, present := byID["NODETAIL"]; !present {
+		t.Error("NODETAIL missing: failed detail must be marked unreadable")
+	} else if !j.Unreadable {
+		t.Error("NODETAIL must be unreadable after a failed detail")
 	}
 
 	j, ok := byID["S0"]
