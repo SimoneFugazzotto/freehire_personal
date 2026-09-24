@@ -86,6 +86,7 @@ func TestRecognize(t *testing.T) {
 		{"smartrecruiters bare posting", "https://jobs.smartrecruiters.com/BHFT/744000139104759-senior-compliance-officer", "smartrecruiters", "BHFT", "https://jobs.smartrecruiters.com/BHFT/744000139104759-senior-compliance-officer", true},
 		{"smartrecruiters posting behind a portal segment", "https://jobs.smartrecruiters.com/ni/BHFT/6fc8fa0d-1447-4887-9bae-945406ca8500-talent-acquisition-manager", "smartrecruiters", "BHFT", "https://jobs.smartrecruiters.com/ni/BHFT/6fc8fa0d-1447-4887-9bae-945406ca8500-talent-acquisition-manager", true},
 		{"smartrecruiters board listing", "https://jobs.smartrecruiters.com/BHFT", "smartrecruiters", "BHFT", "https://jobs.smartrecruiters.com/BHFT", true},
+		{"smartrecruiters product path is not a board", "https://jobs.smartrecruiters.com/oneclick-ui", "", "", "", false},
 		// The Apply button leaves the posting for a one-click form addressed by publication
 		// uuid. Its employer is named in the path (/company/<board>/), and without this the
 		// first segment — "oneclick-ui", the product's own machinery — is read as the board.

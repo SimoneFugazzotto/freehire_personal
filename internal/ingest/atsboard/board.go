@@ -641,6 +641,12 @@ func Recognize(rawURL string) (source, board, canonical string, ok bool) {
 			u.Path = "/" + m[1]
 			return src, m[1], u.String(), true
 		}
+		// oneclick-ui is SmartRecruiters' product machinery, never a board. The
+		// complete form above is the only one-click URL shape that carries an
+		// employer in its path.
+		if strings.HasPrefix(strings.TrimPrefix(u.Path, "/"), "oneclick-ui/") || u.Path == "/oneclick-ui" {
+			return "", "", "", false
+		}
 		// Otherwise the employer is the segment immediately before the posting, which is
 		// the first segment on a bare URL and the second behind a portal segment. Only a
 		// recognizable posting segment shifts the board along; any other shape falls through to
