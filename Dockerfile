@@ -18,7 +18,7 @@ COPY . .
 # server needs an output name of its own.
 RUN CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o /out/hire ./cmd/server \
  && CGO_ENABLED=0 GOOS=linux go build -ldflags="-s -w" -o /out/ \
-      ./cmd/ingest ./cmd/enrich ./cmd/reindex ./cmd/tg-ingest ./cmd/tg-extract \
+      ./cmd/ingest ./cmd/add-board ./cmd/enrich ./cmd/reindex ./cmd/tg-ingest ./cmd/tg-extract \
       ./cmd/backfill-derive ./cmd/liveness ./cmd/notify ./cmd/import-collections \
       ./cmd/recount-companies ./cmd/migrate
 
@@ -50,7 +50,7 @@ RUN apt-get update \
  && groupadd --system --gid 65532 nonroot \
  && useradd --system --uid 65532 --gid nonroot --home-dir /app nonroot \
  && pdftotext -v
-COPY --from=build /out/hire /out/ingest /out/enrich /out/reindex /out/tg-ingest /out/tg-extract /out/backfill-derive /out/liveness /out/notify /out/import-collections /out/recount-companies /out/migrate /app/
+COPY --from=build /out/hire /out/add-board /out/ingest /out/enrich /out/reindex /out/tg-ingest /out/tg-extract /out/backfill-derive /out/liveness /out/notify /out/import-collections /out/recount-companies /out/migrate /app/
 # The migration runner reads its *.sql files from the image (WORKDIR /app, default
 # -dir migrations), so /app/migrate works the same as `go run ./cmd/migrate` on the host.
 COPY --from=build /src/migrations /app/migrations

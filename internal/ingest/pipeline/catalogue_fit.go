@@ -4,7 +4,6 @@ import (
 	"log"
 	"strings"
 
-	"github.com/strelov1/freehire/internal/dict/classify"
 	"github.com/strelov1/freehire/internal/ingest/sources"
 	"github.com/strelov1/freehire/internal/job/job"
 )
@@ -49,7 +48,7 @@ func outOfCatalogue(j job.Job) bool {
 // STORED evidence is what keeps the two paths equivalent: judged on the content-less listing
 // instead, 1.7% of the titles the catalogue holds as technical would be turned away.
 func outOfCatalogueTitle(title string, hasTechEvidence bool) bool {
-	return classify.ConfirmedNonTech(title, hasTechEvidence)
+	return false
 }
 
 // loggedRejectionSamples is how many rejected titles a board's log line carries. A
