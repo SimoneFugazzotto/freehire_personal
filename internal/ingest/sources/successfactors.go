@@ -82,6 +82,10 @@ func (s successfactors) detail(ctx context.Context, e CompanyEntry, entry sitema
 	if title == "" {
 		title = metaProperty(root, "og:title")
 	}
+	location := ""
+	if n := firstByClass(root, "jobGeoLocation"); n != nil {
+	location = textContent(n)
+	}
 
 	return Job{
 		ExternalID: id,
@@ -90,7 +94,7 @@ func (s successfactors) detail(ctx context.Context, e CompanyEntry, entry sitema
 		Company:    company,
 		// Location is intentionally empty: SuccessFactors does not expose it in the
 		// microdata, and enrichment derives it from the description.
-		Location:    "",
+		Location:    location,
 		Description: sanitizeHTML(itempropHTML(root, "description")),
 		Remote:      isRemote(title),
 		PostedAt:    parseDate(entry.LastMod),
