@@ -348,11 +348,13 @@ func resolveSubdivision(tok, prevTok string) (string, bool) {
 }
 
 // subdivisionAccepted reports whether a matched subdivision code should win over
-// its identically-spelled country-code reading. A code outside
-// collidingSubdivisions is unambiguous and always accepted; a colliding one is
-// accepted only when cityTok is isRecognizedUSCACity.
+// its identically-spelled country-code reading or another known geographic use.
+// A code outside the ambiguity sets is accepted unconditionally; an ambiguous
+// one is accepted only when cityTok is isRecognizedUSCACity.
 func subdivisionAccepted(code, cityTok string) bool {
-	if _, ambiguous := collidingSubdivisions[code]; !ambiguous {
+	_, countryCollision := collidingSubdivisions[code]
+	_, contextRequired := contextRequiredSubdivisions[code]
+	if !countryCollision && !contextRequired {
 		return true
 	}
 	return isRecognizedUSCACity(cityTok)

@@ -114,6 +114,21 @@ func TestParse(t *testing.T) {
 			want:     Geo{Countries: []string{"gb"}, Regions: []string{"uk"}, Cities: []string{"Manchester"}},
 		},
 		{
+			name:     "Italian native city spelling",
+			location: "Roma, Roma",
+			want:     Geo{Countries: []string{"it"}, Regions: []string{"eu"}, Cities: []string{"Rome"}},
+		},
+		{
+			name:     "Italian province abbreviation is not Michigan",
+			location: "Gorgonzola (MI), Milano",
+			want:     Geo{Countries: []string{"it"}, Regions: []string{"eu"}, Cities: []string{"Gorgonzola", "Milan"}},
+		},
+		{
+			name:     "Michigan keeps its US reading with a US city",
+			location: "Detroit, MI",
+			want:     Geo{Countries: []string{"us"}, Regions: []string{"north_america"}, Cities: []string{"Detroit"}},
+		},
+		{
 			name:     "accented montreal resolves to CA",
 			location: "Montréal, QC",
 			want:     Geo{Countries: []string{"ca"}, Regions: []string{"north_america"}, Cities: []string{"Montreal"}},

@@ -75,7 +75,7 @@ var nameToCountry = map[string]string{
 	"poland": "pl", "warsaw": "pl", "warszawa": "pl",
 	"ireland": "ie", "dublin": "ie",
 	"portugal": "pt", "lisbon": "pt",
-	"italy": "it", "milan": "it", "rome": "it",
+	"italy": "it", "milan": "it", "milano": "it", "rome": "it", "roma": "it", "marcallo": "it",
 	"belgium": "be", "brussels": "be",
 	"denmark": "dk", "danmark": "dk", "copenhagen": "dk",
 	"finland": "fi", "suomi": "fi", "helsinki": "fi",
@@ -379,6 +379,15 @@ var subdivisionToCountry = map[string]string{
 // is deliberately excluded — see subdivisionToCountry's comment above: "City, CA"
 // stays California.
 var collidingSubdivisions = computeCollidingSubdivisions()
+
+// contextRequiredSubdivisions holds postal abbreviations that are also used as
+// non-North-American geographic terms. They need the same nearby US/CA-city
+// evidence as ISO-country collisions before they can assert North America.
+// "mi" is Michigan in "Detroit, MI", but also the standard abbreviation for
+// Milano province in Italian ATS locations such as "Gorgonzola (MI), Milano".
+var contextRequiredSubdivisions = map[string]struct{}{
+	"mi": {},
+}
 
 func computeCollidingSubdivisions() map[string]struct{} {
 	out := map[string]struct{}{}
