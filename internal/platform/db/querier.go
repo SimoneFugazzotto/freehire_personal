@@ -1903,8 +1903,7 @@ type Querier interface {
 	//      differs from the job's current content_hash — AND confirmed technical
 	//      (is_tech IS TRUE), the same gate EnqueueJobEnrichment/EnqueuePendingJobs use
 	//      (jobs.sql, enrichment.sql) so embed spend is not wasted on postings that will
-	//      never surface via keyword/category search either (see search.CategoryUnresolved,
-	//      internal/search/document.go). Before this the gate was category-based
+	//      are not eligible for technical semantic retrieval. Before this the gate was category-based
 	//      (category <> ALL(NonTechCategories)), a deliberate "category-gated, not
 	//      tech-only" design — measured 2026-07-22 at only 35% of the (now-removed)
 	//      jobs_semantic Meili index's ~2.05M docs carrying an is_tech tag, i.e. the same
@@ -5655,8 +5654,8 @@ type Querier interface {
 	// the wider table scope did all three: 294,021 company URLs in the sitemap of which
 	// most rendered "0 open jobs", `remote_regions` offering regions whose jobs the click
 	// through could not find, and Stripe listed at 570 on /companies against 444 on its
-	// own page. The three predicates below are the ones cmd/reindex's splitJobs applies
-	// on top of closed/duplicate; keep the two in step.
+	// own page. The open/canonical/non-private scope below is the one cmd/reindex's
+	// splitJobs applies; keep the two in step.
 	//
 	// industries_derived (see derived_eligible/derived_ind below) is a SECOND-ORDER
 	// derivation — computed from this pass's own `dom` and the company's curated

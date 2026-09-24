@@ -429,8 +429,8 @@ WHERE slug = sqlc.arg(slug);
 -- the wider table scope did all three: 294,021 company URLs in the sitemap of which
 -- most rendered "0 open jobs", `remote_regions` offering regions whose jobs the click
 -- through could not find, and Stripe listed at 570 on /companies against 444 on its
--- own page. The three predicates below are the ones cmd/reindex's splitJobs applies
--- on top of closed/duplicate; keep the two in step.
+-- own page. The open/canonical/non-private scope below is the one cmd/reindex's
+-- splitJobs applies; keep the two in step.
 --
 -- industries_derived (see derived_eligible/derived_ind below) is a SECOND-ORDER
 -- derivation — computed from this pass's own `dom` and the company's curated
@@ -448,24 +448,6 @@ WITH oj AS MATERIALIZED (
     WHERE closed_at IS NULL AND duplicate_of IS NULL AND company_slug <> ''
       -- Visible only to its creator (the jd-tailor-intake path).
       AND NOT is_private
-      -- search.DescriptionMissing strips the body to plain text first, which SQL
-      -- cannot reproduce, so a body that is only empty markup still counts here. That
-      -- residual is small and self-limiting: such a company reaches the sitemap, and
-      -- its page answers noindex off the same search that excluded the row.
-      AND description <> ''
-      -- search.CategoryUnresolved: the column answers, or the enrichment does, or
-      -- is_tech is confidently true (a confirmed-technical job — e.g. Profession's
-      -- dedicated itdev/itops boards, issue #2601 — is never the undifferentiated
-      -- bulk this predicate exists to keep out, even lacking a specific category) —
-      -- and "other" is the classifier declining, not an answer. This is the predicate
-      -- that excluded almost everything in the sample, the dictionaries being
-      -- deliberately dict-only: a Samara kindergarten's vacancy resolves to no tech
-      -- category and no is_tech, so nobody can find it and its employer is not a page
-      -- worth handing a crawler. Keep this in step with search.CategoryUnresolved
-      -- (internal/search/search/document.go) — a company whose only open jobs are
-      -- confirmed-technical-but-uncategorized would otherwise show 0 open jobs here
-      -- while those same jobs are live in search.
-      AND (category <> '' OR COALESCE(enrichment->>'category', '') NOT IN ('', 'other') OR is_tech IS TRUE)
 ),
 counts AS (
     SELECT company_slug, count(*) AS cnt FROM oj GROUP BY company_slug

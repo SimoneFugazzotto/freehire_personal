@@ -25,9 +25,8 @@ import (
 //   - a POSTING PAGE carries the body, as a schema.org JobPosting in a flight TEXT ROW (not an
 //     application/ld+json <script>, which the RSC response has no HTML to hold).
 //
-// That split is why this is a HydratingSource: a body costs one request per posting, and a
-// posting with no body is excluded from the search index (search.DescriptionMissing), so the
-// listing alone would ingest a catalogue nobody can find. Fetching the body only for postings
+// That split is why this is a HydratingSource: a body costs one request per posting and makes
+// keyword search and job evaluation useful. Fetching the body only for postings
 // the catalogue does not already have makes an ordinary run cost a request per NEW posting.
 type remotedotcom struct {
 	http HeaderTextGetter

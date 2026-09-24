@@ -1,13 +1,11 @@
 package search
 
 import (
-	"encoding/json"
 	"slices"
 	"strings"
 	"time"
 
 	"github.com/strelov1/freehire/internal/ai/aiarchetype"
-	"github.com/strelov1/freehire/internal/ai/enrich"
 	"github.com/strelov1/freehire/internal/dict/roletype"
 	"github.com/strelov1/freehire/internal/dict/skillvec"
 	"github.com/strelov1/freehire/internal/job/jobview"
@@ -153,52 +151,6 @@ func FromJob(j db.Job) (JobDocument, error) {
 	// no-op, it drops the posting out of the index entirely.
 	doc.Vectors = map[string][]float32{SkillEmbedder: skillvec.JobVector(j.Skills)}
 	return doc, nil
-}
-
-// CategoryUnresolved reports whether a job's category is unresolved by both the
-// deterministic title dictionary and the LLM: internal/dict/classify's title match left
-// jobs.category empty, and enrichment either never found one or fell back to the
-// catch-all "other". Such a job carries no meaningful category facet, so it is
-// excluded from the index rather than diluting it with the undifferentiated bulk a
-// broad ATS crawl brings in (painters, stockers, drivers — postings no category
-// filter, and often no keyword search, was ever meant to surface). It reads the raw
-// enrichment JSON rather than jobview's folded Enrichment.Category, which the
-// dictionary column always overwrites (see internal/dict/classify/AGENTS.md) and so
-// never carries the LLM's own answer.
-//
-// This exclusion does not apply when is_tech is confidently true (see the
-// tech-classification spec): a confirmed-technical job is never the undifferentiated
-// bulk this function exists to keep out, whether that confidence came from the title
-// dictionary alone or from a source's own structured signal (jobderive.Input.IsTechHint
-// — e.g. Profession's dedicated itdev/itops boards, issue #2601). Such a job stays
-// searchable even if its category never resolves further.
-func CategoryUnresolved(j db.Job) bool {
-	if j.Category != "" {
-		return false
-	}
-	if j.IsTech.Valid && j.IsTech.Bool {
-		return false
-	}
-	var e enrich.Enrichment
-	if len(j.Enrichment) > 0 {
-		_ = json.Unmarshal(j.Enrichment, &e)
-	}
-	return e.Category == "" || e.Category == "other"
-}
-
-// DescriptionMissing reports whether a job carries no posting body at all. An adapter
-// keeps a posting whose detail fetch failed — the listing is authoritative for the job
-// existing, and a later crawl can still hydrate it — so a body-less row is a normal,
-// recoverable ingest state rather than an error. It is not something to SHOW: a vacancy
-// page with a title and nothing under it tells a candidate nothing and cannot be applied
-// to on its merits, so such a job is excluded from the index exactly like an
-// unresolved-category one, and re-enters it by itself the moment a crawl fills the body.
-//
-// The test is on the VISIBLE text, not the raw column: a source that publishes an empty
-// rich-text field serves markup with no words in it ("<p>&nbsp;</p>"), which the ingest
-// sanitizer keeps because those tags are legal.
-func DescriptionMissing(j db.Job) bool {
-	return stripToPlainText(j.Description) == ""
 }
 
 // MergeClosureGeography widens a searchable document's geography facets with the union

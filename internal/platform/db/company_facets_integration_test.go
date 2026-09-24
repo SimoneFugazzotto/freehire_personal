@@ -133,13 +133,9 @@ func TestRefreshCompanyFacets(t *testing.T) {
 	})
 }
 
-// TestRefreshCompanyFacetsCountsConfirmedTechnicalJobs pins that RefreshCompanyFacets'
-// category-unresolved exclusion stays in step with search.CategoryUnresolved
-// (internal/search/search/document.go) after issue #2601: a company whose only open
-// job has no resolved category (dictionary or enrichment) but is_tech confidently true
-// must still be counted, or its page would show 0 open jobs while that same job is
-// live in search.
-func TestRefreshCompanyFacetsCountsConfirmedTechnicalJobs(t *testing.T) {
+// Company job_count uses the same exhaustive scope as search. An unclassified job with a
+// temporarily missing body is still a real vacancy, so the company page must not say zero.
+func TestRefreshCompanyFacetsCountsUnclassifiedJobs(t *testing.T) {
 	pool := startPostgres(t)
 	q := New(pool)
 	ctx := context.Background()
@@ -152,8 +148,8 @@ func TestRefreshCompanyFacetsCountsConfirmedTechnicalJobs(t *testing.T) {
 	if _, err := pool.Exec(ctx,
 		`INSERT INTO jobs (source, external_id, url, title, public_slug, company_slug, regions, countries,
 		                   enrichment, description, category, is_tech)
-		 VALUES ('profession', 'itdev:1', 'http://example.test', 'Windows rendszermérnök', 'job-itdev-1', 'itonly',
-		         '{europe}', '{hu}', '{}', 'We are hiring.', '', true)`); err != nil {
+		 VALUES ('official', 'thermal:1', 'http://example.test', 'Thermal Systems Engineer', 'job-thermal-1', 'itonly',
+		         '{europe}', '{hu}', '{}', '', '', NULL)`); err != nil {
 		t.Fatalf("insert job: %v", err)
 	}
 
@@ -161,7 +157,7 @@ func TestRefreshCompanyFacetsCountsConfirmedTechnicalJobs(t *testing.T) {
 		t.Fatalf("refresh: %v", err)
 	}
 	if got := companyTextArray(t, pool, "itonly", "regions"); !slices.Equal(got, []string{"europe"}) {
-		t.Errorf("regions = %v, want [europe] — a confirmed-technical, uncategorized job must still be counted", got)
+		t.Errorf("regions = %v, want [europe] — an unclassified job must still be counted", got)
 	}
 	var jobCount int
 	if err := pool.QueryRow(ctx, "SELECT job_count FROM companies WHERE slug = 'itonly'").Scan(&jobCount); err != nil {

@@ -73,12 +73,11 @@ func TestSplitJobs_PrivateJobsAreDeletedNotIndexed(t *testing.T) {
 	}
 }
 
-// A job whose category neither the title dictionary nor the LLM ever resolved must not
-// be indexed, and is deleted so a stale pre-rule copy leaves the index (see
-// search.CategoryUnresolved and internal/search/AGENTS.md).
-func TestSplitJobs_CategoryUnresolvedDeletedNotIndexed(t *testing.T) {
+// Category resolution is a ranking signal, not a catalogue gate: engineering titles the
+// dictionaries have not learned yet and non-IT roles must remain searchable in All Jobs.
+func TestSplitJobs_CategoryUnresolvedRemainIndexed(t *testing.T) {
 	categorized := db.Job{ID: 1, Title: "Backend Engineer", PublicSlug: "backend-x", Category: "backend", Description: "<p>Build things.</p>"}
-	unresolved := db.Job{ID: 2, Title: "Overnight Stocking", PublicSlug: "stocking-x"}
+	unresolved := db.Job{ID: 2, Title: "Thermal Systems Engineer", PublicSlug: "thermal-x"}
 	llmOther := db.Job{ID: 3, Title: "Mystery Role", PublicSlug: "mystery-x",
 		Enrichment: []byte(`{"category":"other"}`)}
 
@@ -86,19 +85,17 @@ func TestSplitJobs_CategoryUnresolvedDeletedNotIndexed(t *testing.T) {
 	if err != nil {
 		t.Fatalf("splitJobs: %v", err)
 	}
-	if len(docs) != 1 || docs[0].ID != 1 {
-		t.Fatalf("docs = %+v, want only the categorized job", docs)
+	if got := []int64{docs[0].ID, docs[1].ID, docs[2].ID}; !reflect.DeepEqual(got, []int64{1, 2, 3}) {
+		t.Fatalf("indexed ids = %v, want [1 2 3]", got)
 	}
-	if got, want := deleteIDs, []int64{2, 3}; !reflect.DeepEqual(got, want) {
-		t.Fatalf("deleteIDs = %v, want %v", got, want)
+	if len(deleteIDs) != 0 {
+		t.Fatalf("deleteIDs = %v, want none", deleteIDs)
 	}
 }
 
-// A posting whose detail fetch never landed carries a title and nothing under it. It is a
-// legitimate row (a later crawl can still hydrate it) but not a listing anyone can read, so it
-// is kept out of the index and deleted from it — and re-enters by itself once the body arrives.
-// Markup with no words in it counts as empty. freehire#1866.
-func TestSplitJobs_BodylessJobsDeletedNotIndexed(t *testing.T) {
+// A listing may temporarily lack a body while its detail fetch is retried. The job still exists
+// on its official board, so its title and apply URL belong in the exhaustive catalogue.
+func TestSplitJobs_BodylessJobsRemainIndexed(t *testing.T) {
 	readable := db.Job{ID: 1, Title: "Backend Engineer", PublicSlug: "backend-x",
 		Category: "backend", Description: "<p>Build things.</p>"}
 	bodyless := db.Job{ID: 2, Title: "Backend Engineer", PublicSlug: "bodyless-x", Category: "backend"}
@@ -109,11 +106,11 @@ func TestSplitJobs_BodylessJobsDeletedNotIndexed(t *testing.T) {
 	if err != nil {
 		t.Fatalf("splitJobs: %v", err)
 	}
-	if len(docs) != 1 || docs[0].ID != 1 {
-		t.Fatalf("docs = %+v, want only the job with a body", docs)
+	if got := []int64{docs[0].ID, docs[1].ID, docs[2].ID}; !reflect.DeepEqual(got, []int64{1, 2, 3}) {
+		t.Fatalf("indexed ids = %v, want [1 2 3]", got)
 	}
-	if got, want := deleteIDs, []int64{2, 3}; !reflect.DeepEqual(got, want) {
-		t.Fatalf("deleteIDs = %v, want %v", got, want)
+	if len(deleteIDs) != 0 {
+		t.Fatalf("deleteIDs = %v, want none", deleteIDs)
 	}
 }
 

@@ -13,32 +13,10 @@ reads a precomputed pgvector lookup instead (`internal/search/similarjobs`,
 
 ## Always true
 
-- **A job whose category is unresolved by both the title dictionary and the LLM never
-  enters the index.** `search.CategoryUnresolved` (`document.go`) reports true when
-  `jobs.category` is empty (`internal/dict/classify` found nothing in the title) AND the raw
-  LLM enrichment's own `category` is also empty or the catch-all `"other"` — read from
-  the raw JSON, not `jobview`'s folded `Enrichment.Category`, which the dictionary
-  column always overwrites (`internal/dict/classify/AGENTS.md`) and so never carries the
-  LLM's answer. Both `cmd/reindex`'s `splitJobs` and `cmd/search-drain`'s `IndexBatch`
-  apply it — added because this bucket was measured at ~65% of the open catalogue
-  (broad multi-industry ATS crawls contribute postings like "Industrial Painter" or
-  "Backhoe Loader Operator" that neither dictionary was ever meant to place), diluting
-  every keyword and category-filtered search with undifferentiated noise. A job later
-  categorized by a dictionary update or a fresh LLM pass is picked up by the next full
-  `cmd/reindex` run, not incrementally — `SetJobEnrichment` does not enqueue
-  `search_outbox`, so there is no faster path today.
-- **A job with no posting body never enters the index.** `search.DescriptionMissing`
-  (`document.go`) tests the VISIBLE text — `stripToPlainText` — not the raw column, because a
-  source that publishes an empty rich-text field serves markup with no words in it
-  (`<p>&nbsp;</p>`) and the ingest sanitizer legitimately keeps those tags. An adapter
-  deliberately stores a posting whose detail fetch failed (the listing is authoritative for the
-  job existing, and a later crawl can hydrate it), so a body-less row is a recoverable ingest
-  state, not an error — but a vacancy page with a title and nothing under it is not a listing
-  anyone can act on. `cmd/reindex`'s `splitJobs`, `cmd/search-drain`'s `IndexBatch`, and
-  `internal/ingest/linkimport` all apply it, alongside `CategoryUnresolved`. Measured at 15,816 live
-  rows (0.48% of the open catalogue) when the rule was added (freehire#1866). The exclusion is
-  self-healing: a row re-enters the index the moment a crawl fills its description, with no
-  backfill or manual step.
+- **Every open, non-private canonical job enters the index.** `PRODUCT_VISION.md` makes
+  All Jobs exhaustive: unresolved categories and temporary detail-fetch failures are signals
+  for ranking and presentation, never a reason to hide a real vacancy. `cmd/reindex`,
+  `cmd/search-drain`, and `internal/ingest/linkimport` must therefore keep the same scope.
 - **Meilisearch has ONE serial task queue.** Two rebuilds do not run concurrently — the
   second queues behind the first and looks like a hang while the engine is genuinely busy.
   Before triggering any rebuild, check `ps aux | grep reindex` and
@@ -55,7 +33,7 @@ reads a precomputed pgvector lookup instead (`internal/search/similarjobs`,
   ENOSPC → orphan → less disk → ENOSPC death spiral came from these orphans.)
   `Rebuild.Prepare` also drops a leftover before starting.
 - **Live reads are never affected by a rebuild** — the swap is atomic.
-- A full rebuild (`scope=full`) pushes **every** open, non-private, categorized document
+- A full rebuild (`scope=full`) pushes **every** open, non-private canonical document
   unconditionally to the fresh rebuild index — `content_hash` is never read in
   `cmd/reindex`; the `indexed=X skipped=Y` log line counts rows `ResilientPage` skipped
   for corruption, not hash-skipped ones. (An older version of this doc claimed
@@ -84,9 +62,9 @@ reads a precomputed pgvector lookup instead (`internal/search/similarjobs`,
   count-honesty cap, **not** the pagination guard (that's `maxPageWindow` in the handler,
   which bounds the Postgres-backed lists too since the 2026-09-14 deep-offset outage).
 - **Both indexes are also what the sitemaps page** (`sitemap.go` → `/api/v1/jobs/sitemap`
-  and `/api/v1/companies/sitemap`), which makes the "unresolved category never enters the
-  index" rule above a decision about what Google crawls, not only about what search
-  returns. They read through `GET /indexes/<uid>/documents` — offset-addressed, unaffected
+and `/api/v1/companies/sitemap`). Sitemap scope stays deliberately narrower than search
+(technical, non-evergreen jobs), while All Jobs remains exhaustive. They read through
+`GET /indexes/<uid>/documents` — offset-addressed, unaffected
   by `maxTotalHits` and `maxPageWindow` (both bound `/search`, not this route), and
   measured flat in the offset: 0 and 1.2M both answer under 0.25s on prod. That replaced a
   Postgres `row_number()` walk which had grown to 64s over 3.4M rows and was timing out

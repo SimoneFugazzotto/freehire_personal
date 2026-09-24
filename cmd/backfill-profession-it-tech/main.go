@@ -3,8 +3,7 @@
 // ingest (issue #2601, see internal/ingest/sources/profession.go's IsTechHint). Without
 // it, only newly-crawled or re-crawled postings from these two boards get the
 // correction — the rows already in the catalogue stay stuck with is_tech unknown,
-// never enter the enrichment queue, and stay excluded from search
-// (search.CategoryUnresolved).
+// never enter the enrichment queue, so they miss enrichment-derived facets and ranking signals.
 //
 // A single UPDATE, not chunked: the affected set is bounded to two boards (low
 // thousands at most), unlike the multi-million-row backfills that need an id-range
