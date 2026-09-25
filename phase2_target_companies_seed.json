@@ -1,0 +1,7878 @@
+{
+  "meta": {
+    "title": "Freehire Personal - Phase 2 target company research seed",
+    "generated_on": "2026-09-24",
+    "purpose": "Curated company/organization seed for Phase 2 source discovery. Prioritizes Italy, then Europe, then selected international employers relevant to Simone's Energy & Nuclear Engineering profile.",
+    "selection_principles": [
+      "Include direct nuclear, energy, EPC, thermal/thermo-fluid, process, plant, aerospace, propulsion, industrial and R&D employers.",
+      "Include a deliberate mix of large groups, mid-sized engineering firms and specialist SMEs/supply-chain companies.",
+      "Prefer breadth at this stage: source discovery and later job-level ranking decide what is useful.",
+      "Organizations are seeds, not trusted source records. Codex must verify the official website, careers page, ATS/provider and board before onboarding.",
+      "Do not filter careers by geography during ingestion; collect the official board and filter later.",
+      "Subsidiaries are included only when they are useful recruiting/industrial entities in their own right.",
+      "Research/public organizations are included when they directly hire engineers in the target domains."
+    ],
+    "scale_hint_note": "scale_hint is a rough research heuristic, not an audited employee-count classification.",
+    "recommended_processing_order": [
+      "Italy priority 1",
+      "Italy priority 2",
+      "Italy priority 3",
+      "Europe priority 1",
+      "Europe priority 2",
+      "Europe priority 3",
+      "International priority 1",
+      "International priority 2"
+    ],
+    "counts": {
+      "total": 269,
+      "by_region_group": {
+        "Italy": 115,
+        "Europe": 117,
+        "International": 37
+      },
+      "by_priority": {
+        "1": 167,
+        "2": 92,
+        "3": 10
+      },
+      "by_scale_hint": {
+        "large": 161,
+        "mid": 91,
+        "sme": 10,
+        "research": 6,
+        "public": 1
+      },
+      "phase1_pilot_entries": 9
+    },
+    "research_sources": {
+      "AIN": {
+        "name": "Associazione Italiana Nucleare - Soci collettivi",
+        "url": "https://associazioneitaliananucleare.it/soci-collettivi/"
+      },
+      "ANIMP": {
+        "name": "ANIMP - Associati impiantistica industriale",
+        "url": "https://www.animp.it/web/associati.php"
+      },
+      "AIAD": {
+        "name": "AIAD - aziende federate / categorie aerospace, defence e space",
+        "url": "https://aiad.it/aziende-federate/"
+      },
+      "NUCLEAREUROPE": {
+        "name": "nucleareurope - membership e supply chain europea",
+        "url": "https://www.nucleareurope.eu/our-members/"
+      },
+      "NUCLEAREUROPE_SC": {
+        "name": "nucleareurope - European nuclear supply chain",
+        "url": "https://supplychain.nucleareurope.eu/areas-of-activity/"
+      },
+      "NIA_UK": {
+        "name": "UK Nuclear Industry Association - members",
+        "url": "https://www.niauk.org/membership/our-members/"
+      },
+      "FORO_ES": {
+        "name": "Foro Nuclear - socios industria nuclear española",
+        "url": "https://www.foronuclear.org/nuestros-socios/"
+      },
+      "GIFEN": {
+        "name": "GIFEN - filiera nucleare francese / rapporti associativi",
+        "url": "https://www.gifen.fr/"
+      },
+      "CURATED": {
+        "name": "Curated sector leaders and employers",
+        "url": null
+      }
+    }
+  },
+  "companies": [
+    {
+      "name": "Ansaldo Energia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "power-generation",
+        "energy",
+        "turbomachinery",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "thermal",
+        "fluid-systems",
+        "turbomachinery",
+        "heat-transfer",
+        "systems"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Ansaldo Nucleare",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "EPC"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Argotec",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "space",
+        "satellites",
+        "R&D"
+      ],
+      "fit_tags": [
+        "thermal",
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ATB Riva Calzoni",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "hydropower",
+        "heavy-engineering"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "energy-systems",
+        "nuclear"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Avio",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "space",
+        "propulsion",
+        "aerospace"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "propulsion",
+        "heat-transfer",
+        "fluid-dynamics",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Avio Aero",
+      "aliases": [
+        "GE Aerospace Italy"
+      ],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "propulsion",
+        "turbomachinery"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "turbomachinery",
+        "heat-transfer",
+        "fluid-dynamics"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Baykar Piaggio Aerospace",
+      "aliases": [
+        "Piaggio Aerospace"
+      ],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "aircraft",
+        "propulsion"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "fluid-dynamics",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Belleli Energy CPE",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "pressure-equipment",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "mechanical",
+        "pressure-vessels"
+      ],
+      "research_basis": [
+        "AIN",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Boldrocchi",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "industrial",
+        "fans",
+        "heat-exchange",
+        "environment"
+      ],
+      "fit_tags": [
+        "fluid-dynamics",
+        "thermal",
+        "heat-transfer",
+        "mechanical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Bonatti",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "oil-gas",
+        "pipelines",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "plant",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "D-Orbit",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "space",
+        "satellites",
+        "propulsion"
+      ],
+      "fit_tags": [
+        "thermal",
+        "systems",
+        "propulsion",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Danieli",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial",
+        "metals",
+        "plant-engineering"
+      ],
+      "fit_tags": [
+        "thermal",
+        "process",
+        "plant",
+        "R&D",
+        "systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "De Nora",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial",
+        "electrochemistry",
+        "hydrogen",
+        "water"
+      ],
+      "fit_tags": [
+        "process",
+        "R&D",
+        "energy-systems",
+        "thermal"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "De Pretto Industrie",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "power-generation",
+        "nuclear",
+        "turbomachinery"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "mechanical",
+        "energy-systems"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "DRASS",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "subsea",
+        "hyperbaric",
+        "naval",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "thermal",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Edison",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "power-generation",
+        "gas",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "thermal",
+        "process",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Enel",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "power-generation",
+        "renewables",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "power",
+        "thermal",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "AIN",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Enereco",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "energy",
+        "oil-gas",
+        "pipelines"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Eni",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "oil-gas",
+        "energy",
+        "industrial",
+        "R&D"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "energy",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIN",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "Exergy International",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "power-generation",
+        "ORC",
+        "geothermal"
+      ],
+      "fit_tags": [
+        "thermal",
+        "heat-transfer",
+        "turbomachinery",
+        "R&D"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Fincantieri",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "shipbuilding",
+        "defence",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "thermal",
+        "mechanical",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Fisia Italimpianti",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "EPC",
+        "water",
+        "environment",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "thermal",
+        "plant"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Flenco Fluid System",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "fluid-systems",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "thermal",
+        "mechanical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "FOMAS Group",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "forgings",
+        "industrial"
+      ],
+      "fit_tags": [
+        "materials",
+        "mechanical",
+        "manufacturing",
+        "nuclear"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Franco Tosi Meccanica",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "turbomachinery",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "mechanical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ILF Engineers Italia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering-consulting",
+        "energy",
+        "infrastructure"
+      ],
+      "fit_tags": [
+        "process",
+        "energy-systems",
+        "fluid-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Leonardo",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "defence",
+        "helicopters",
+        "systems"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "fluid-dynamics",
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "Macchi - Sofinter",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "boilers",
+        "power-generation",
+        "industrial"
+      ],
+      "fit_tags": [
+        "thermal",
+        "heat-transfer",
+        "combustion",
+        "plant"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Magaldi Power",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "power-generation",
+        "thermal-storage",
+        "industrial"
+      ],
+      "fit_tags": [
+        "thermal",
+        "heat-transfer",
+        "energy-systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "MAIRE",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "process",
+        "energy-transition"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "thermal",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "MBDA Italia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "defence",
+        "missile-systems"
+      ],
+      "fit_tags": [
+        "thermal",
+        "CFD",
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Naviris",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "naval",
+        "defence",
+        "systems"
+      ],
+      "fit_tags": [
+        "systems",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "newcleo",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "advanced-reactors",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "CFD",
+        "heat-transfer",
+        "liquid-metals",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIN",
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "NEXTCHEM",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "energy-transition",
+        "process",
+        "hydrogen",
+        "circular-economy"
+      ],
+      "fit_tags": [
+        "process",
+        "energy-systems",
+        "R&D",
+        "thermal"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "NIER Ingegneria",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "safety",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "safety",
+        "systems",
+        "R&D",
+        "consulting"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Nuclitalia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "project-development"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "energy",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "AIN",
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "OHB Italia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "space",
+        "aerospace"
+      ],
+      "fit_tags": [
+        "thermal",
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Orizzonte Sistemi Navali",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "naval",
+        "systems-integration",
+        "defence"
+      ],
+      "fit_tags": [
+        "systems",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Pietro Fiorentini",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "gas",
+        "hydrogen",
+        "energy",
+        "flow-control"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "process",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Renco",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "EPC",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "RINA",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "energy",
+        "nuclear",
+        "marine"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "thermal",
+        "process",
+        "safety",
+        "consulting"
+      ],
+      "research_basis": [
+        "AIN",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Rosetti Marino",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "EPC",
+        "offshore",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "fluid-systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Saipem",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "oil-gas",
+        "energy",
+        "offshore",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "thermal",
+        "mechanical",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SEINGIM",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SIAD Macchine Impianti",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "industrial-gases",
+        "compressors",
+        "process-plants"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "thermal",
+        "turbomachinery"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SIET",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "sme",
+      "sectors": [
+        "nuclear",
+        "experimental-testing",
+        "thermal-hydraulics"
+      ],
+      "fit_tags": [
+        "thermal-hydraulics",
+        "heat-transfer",
+        "fluid-systems",
+        "experimental-validation",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SIMIC",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "fusion",
+        "heavy-engineering"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "mechanical",
+        "manufacturing",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SITAEL",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "space",
+        "propulsion",
+        "satellites"
+      ],
+      "fit_tags": [
+        "thermal",
+        "propulsion",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Snam",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "gas-infrastructure",
+        "hydrogen",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "energy-systems",
+        "process",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Techfem",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "nuclear",
+        "energy",
+        "pipelines"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Techint",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering",
+        "EPC",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "plant",
+        "process",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Technip Energies",
+      "aliases": [
+        "Technip Energies Italy"
+      ],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "energy",
+        "process",
+        "LNG",
+        "hydrogen"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "Tecnimont",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "process",
+        "petrochemicals",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "thermal",
+        "fluid-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Tenova",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial",
+        "metals",
+        "thermal-processes",
+        "engineering"
+      ],
+      "fit_tags": [
+        "thermal",
+        "process",
+        "heat-transfer",
+        "R&D",
+        "systems"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Thales Alenia Space Italia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "space",
+        "aerospace",
+        "systems"
+      ],
+      "fit_tags": [
+        "thermal",
+        "systems",
+        "mechanical",
+        "R&D",
+        "simulation"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Turboden",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "power-generation",
+        "ORC",
+        "energy-efficiency"
+      ],
+      "fit_tags": [
+        "thermal",
+        "heat-transfer",
+        "turbomachinery",
+        "energy-systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Walter Tosto",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "pressure-equipment",
+        "EPC"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "mechanical",
+        "pressure-vessels",
+        "manufacturing"
+      ],
+      "research_basis": [
+        "AIN",
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "WASS Submarine Systems",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "naval",
+        "defence",
+        "underwater-systems"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "thermal",
+        "systems",
+        "mechanical"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Westinghouse Mangiarotti",
+      "aliases": [
+        "Mangiarotti"
+      ],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "heavy-components"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "mechanical",
+        "manufacturing",
+        "systems"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "A2A",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "power-generation",
+        "waste-to-energy"
+      ],
+      "fit_tags": [
+        "thermal",
+        "energy-systems",
+        "process"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Acea",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "water",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "process",
+        "energy-systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "AEREA",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "aerospace",
+        "defence"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ALTEC",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "space",
+        "systems",
+        "operations"
+      ],
+      "fit_tags": [
+        "systems",
+        "R&D",
+        "engineering"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Arescosmo",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "aerospace",
+        "defence",
+        "space"
+      ],
+      "fit_tags": [
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Arkad",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "EPC",
+        "energy",
+        "oil-gas"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "fluid-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ASE",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "aerospace",
+        "power-systems"
+      ],
+      "fit_tags": [
+        "systems",
+        "power",
+        "thermal",
+        "mechanical"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Brembana & Rolle",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "pressure-equipment",
+        "industrial"
+      ],
+      "fit_tags": [
+        "thermal",
+        "mechanical",
+        "pressure-vessels"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Cannon Artes",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "water-treatment",
+        "process",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "plant"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "CDB Engineering",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Cestaro Rossi & C.",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "industrial-construction"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "plant",
+        "nuclear"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "DG Impianti Industriali",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "industrial-plants",
+        "EPC"
+      ],
+      "fit_tags": [
+        "plant",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Elettronica",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "defence",
+        "electronics",
+        "systems"
+      ],
+      "fit_tags": [
+        "systems",
+        "R&D",
+        "simulation"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ERG",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "renewables",
+        "energy"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ETS Engineering and Technical Services",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "systems",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Eurotecnica Contractors & Engineers",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "EPC",
+        "process",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "thermal",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Fincantieri SI",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "systems-integration",
+        "nuclear",
+        "industrial"
+      ],
+      "fit_tags": [
+        "systems",
+        "plant",
+        "mechanical",
+        "nuclear"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Finder Pompe",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "pumps",
+        "energy",
+        "oil-gas"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Fores Engineering",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "oil-gas",
+        "automation",
+        "energy"
+      ],
+      "fit_tags": [
+        "systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Forge Monchieri",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "forgings",
+        "industrial"
+      ],
+      "fit_tags": [
+        "materials",
+        "mechanical",
+        "manufacturing"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Franchini Acciai",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "forgings",
+        "steel"
+      ],
+      "fit_tags": [
+        "materials",
+        "mechanical",
+        "manufacturing"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Hera",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "energy",
+        "environment"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "process",
+        "plant"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "IBF Group",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "industrial"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "manufacturing",
+        "nuclear"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Iren",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "power-generation",
+        "district-heating"
+      ],
+      "fit_tags": [
+        "thermal",
+        "energy-systems",
+        "process"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Italgas",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "gas-distribution",
+        "energy-infrastructure"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "energy-systems",
+        "systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "L.M.A.",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "aerospace",
+        "precision-manufacturing"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "structures",
+        "manufacturing",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Microtecnica",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "aerospace",
+        "actuation",
+        "systems"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "thermal",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Monsud",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "industrial-fabrication"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "manufacturing",
+        "plant"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Nidec Conversion",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "power-electronics",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "systems",
+        "electrical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "OMA",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "aerospace",
+        "hydraulic-systems",
+        "electromechanical"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Orion Valves",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "valves",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "plant"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Precision Fluid Controls",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "flow-control",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Progeco Group",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering-services",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "plant",
+        "project-engineering",
+        "systems"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Prysmian",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "power-grids",
+        "cables",
+        "energy"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "systems",
+        "industrial"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Renantis",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "renewables",
+        "energy"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Rheinmetall Italia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "defence",
+        "systems"
+      ],
+      "fit_tags": [
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SAB Aerospace",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "space",
+        "aerospace"
+      ],
+      "fit_tags": [
+        "thermal",
+        "mechanical",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SIMECO",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "mechanical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sinergia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "EPC",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Società Gasdotti Italia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "gas-infrastructure",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "energy-systems",
+        "plant"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sorgenia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "power-generation",
+        "renewables",
+        "energy"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "thermal",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Tectubi Raccordi",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "piping",
+        "industrial"
+      ],
+      "fit_tags": [
+        "piping",
+        "mechanical",
+        "nuclear"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Telespazio",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "space",
+        "systems",
+        "satellite-services"
+      ],
+      "fit_tags": [
+        "systems",
+        "R&D",
+        "engineering"
+      ],
+      "research_basis": [
+        "AIAD"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Tenaris Dalmine",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "steel",
+        "pipes",
+        "energy"
+      ],
+      "fit_tags": [
+        "materials",
+        "mechanical",
+        "industrial",
+        "energy"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Termomeccanica Pompe",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "pumps",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "plant"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Terna",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "power-grid",
+        "energy-infrastructure"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Tirreno Power",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "power-generation",
+        "energy"
+      ],
+      "fit_tags": [
+        "thermal",
+        "energy-systems",
+        "plant"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Valvitalia",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "valves",
+        "energy",
+        "nuclear",
+        "oil-gas"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "plant"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "3H CSI",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "sme",
+      "sectors": [
+        "nuclear",
+        "engineering-services"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "engineering",
+        "R&D"
+      ],
+      "research_basis": [
+        "AIN",
+        "NUCLEAREUROPE_SC"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Cosmi",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "mid",
+      "sectors": [
+        "industrial-plants",
+        "energy"
+      ],
+      "fit_tags": [
+        "plant",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Demont",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "mid",
+      "sectors": [
+        "industrial-plants",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "plant",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "AIN",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "GEATOP",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "sme",
+      "sectors": [
+        "nuclear",
+        "metrology",
+        "industrial"
+      ],
+      "fit_tags": [
+        "experimental-validation",
+        "measurement",
+        "quality"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "IREM",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "mid",
+      "sectors": [
+        "industrial-plants",
+        "energy"
+      ],
+      "fit_tags": [
+        "plant",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "PROMETHEUS",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "sme",
+      "sectors": [
+        "nuclear",
+        "engineering-services"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "R&D",
+        "engineering"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SITIE Impianti Industriali",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "mid",
+      "sectors": [
+        "industrial-plants",
+        "energy"
+      ],
+      "fit_tags": [
+        "plant",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "STF Loterios",
+      "aliases": [],
+      "country": "Italy",
+      "region_group": "Italy",
+      "priority": 3,
+      "scale_hint": "mid",
+      "sectors": [
+        "valves",
+        "nuclear",
+        "industrial"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "plant"
+      ],
+      "research_basis": [
+        "AIN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "John Cockerill",
+      "aliases": [],
+      "country": "Belgium",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "industrial",
+        "hydrogen",
+        "defence"
+      ],
+      "fit_tags": [
+        "thermal",
+        "process",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SCK CEN",
+      "aliases": [],
+      "country": "Belgium",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "research",
+      "sectors": [
+        "nuclear",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D",
+        "experimental-validation"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Tractebel",
+      "aliases": [],
+      "country": "Belgium",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "GIFEN",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Doosan Škoda Power",
+      "aliases": [],
+      "country": "Czech Republic",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "turbomachinery",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "mechanical"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ČEZ",
+      "aliases": [],
+      "country": "Czech Republic",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "nuclear",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Škoda JS",
+      "aliases": [],
+      "country": "Czech Republic",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "components"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "mechanical",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Fortum",
+      "aliases": [],
+      "country": "Finland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "nuclear",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "thermal"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Steady Energy",
+      "aliases": [],
+      "country": "Finland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "sme",
+      "sectors": [
+        "advanced-nuclear",
+        "district-heating",
+        "SMR"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "heat-transfer",
+        "R&D"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "TVO",
+      "aliases": [],
+      "country": "Finland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "utilities"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "operations"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Wärtsilä",
+      "aliases": [],
+      "country": "Finland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "engines",
+        "marine",
+        "storage"
+      ],
+      "fit_tags": [
+        "thermal",
+        "fluid-systems",
+        "energy-systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Air Liquide",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial-gases",
+        "hydrogen",
+        "process"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Airbus",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "space",
+        "defence"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "fluid-dynamics",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "Arabelle Solutions",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "turbomachinery",
+        "nuclear",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "heat-transfer",
+        "mechanical"
+      ],
+      "research_basis": [
+        "NIA_UK",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ArianeGroup",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "space",
+        "propulsion",
+        "aerospace"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "propulsion",
+        "fluid-dynamics",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Assystem",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "process",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Calogena",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "sme",
+      "sectors": [
+        "advanced-nuclear",
+        "district-heating"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "heat-transfer",
+        "R&D"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "CEA",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "research",
+      "sectors": [
+        "nuclear",
+        "energy",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "CFD",
+        "R&D",
+        "experimental-validation"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "EDF",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "utilities",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "energy-systems",
+        "R&D",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE",
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Edvance",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "reactor-design"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "thermal",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Egis",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "GIFEN",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Engie",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "energy",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "thermal",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Framatome",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "reactor-systems",
+        "fuel"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Hexana",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "sme",
+      "sectors": [
+        "advanced-nuclear",
+        "SMR"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D",
+        "systems"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "NAAREA",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "sme",
+      "sectors": [
+        "advanced-nuclear",
+        "microreactors"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Naval Group",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "naval",
+        "defence",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "thermal",
+        "fluid-systems",
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Nuvia",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "decommissioning"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "safety",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN",
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Orano",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "fuel-cycle",
+        "decommissioning"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Safran",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "propulsion"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "turbomachinery",
+        "heat-transfer",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Stellaria",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "sme",
+      "sectors": [
+        "advanced-nuclear",
+        "SMR"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D",
+        "systems"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "TechnicAtome",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "reactor-systems",
+        "defence"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Thales",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "defence",
+        "systems"
+      ],
+      "fit_tags": [
+        "thermal",
+        "systems",
+        "R&D",
+        "simulation"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "TotalEnergies",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "oil-gas",
+        "renewables"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "energy-systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Veolia Nuclear Solutions",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "decommissioning",
+        "waste"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Bilfinger",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial-services",
+        "engineering",
+        "energy",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NIA_UK",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Everllence",
+      "aliases": [
+        "MAN Energy Solutions"
+      ],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "turbomachinery",
+        "marine",
+        "energy"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "fluid-systems",
+        "mechanical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Linde Engineering",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "process",
+        "industrial-gases",
+        "hydrogen",
+        "EPC"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "plant"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "MTU Aero Engines",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "propulsion",
+        "turbomachinery"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "turbomachinery",
+        "heat-transfer",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "OHB SE",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "space",
+        "aerospace"
+      ],
+      "fit_tags": [
+        "thermal",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Siemens Energy",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "turbomachinery",
+        "power-generation",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "energy-systems",
+        "heat-transfer"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "thyssenkrupp Uhde",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "process",
+        "hydrogen",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "NRG PALLAS",
+      "aliases": [],
+      "country": "Netherlands",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "research",
+      "sectors": [
+        "nuclear",
+        "research-reactor",
+        "isotopes"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D",
+        "experimental-validation"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Orlen Synthos Green Energy (OSGE)",
+      "aliases": [],
+      "country": "Poland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "SMR",
+        "project-development"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Polskie Elektrownie Jądrowe (PEJ)",
+      "aliases": [],
+      "country": "Poland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "new-build",
+        "project-development"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Nuclearelectrica",
+      "aliases": [],
+      "country": "Romania",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "utilities"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "operations",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "RATEN",
+      "aliases": [],
+      "country": "Romania",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "research",
+      "sectors": [
+        "nuclear",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D",
+        "experimental-validation"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Empresarios Agrupados - GHESA",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Endesa",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "nuclear",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "nuclear",
+        "thermal"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ENSA",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "heavy-components"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "mechanical",
+        "manufacturing",
+        "systems"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ENUSA Industrias Avanzadas",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "fuel-cycle"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "R&D",
+        "systems"
+      ],
+      "research_basis": [
+        "FORO_ES",
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "GD Energy Services",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "industrial-services",
+        "engineering"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "FORO_ES",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Iberdrola",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "nuclear",
+        "renewables"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "nuclear",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "IDOM",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "process",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Navantia",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "shipbuilding",
+        "defence",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "thermal",
+        "systems",
+        "mechanical"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sener",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering",
+        "aerospace",
+        "energy"
+      ],
+      "fit_tags": [
+        "thermal",
+        "systems",
+        "R&D",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Técnicas Reunidas",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "energy",
+        "process"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Westinghouse Spain",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Alfa Laval",
+      "aliases": [],
+      "country": "Sweden",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "heat-exchangers",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "heat-transfer",
+        "thermal",
+        "fluid-systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Studsvik",
+      "aliases": [],
+      "country": "Sweden",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "waste",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "R&D",
+        "process"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Vattenfall",
+      "aliases": [],
+      "country": "Sweden",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "nuclear",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "thermal"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ABB",
+      "aliases": [],
+      "country": "Switzerland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "electrification",
+        "industrial",
+        "energy",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "systems",
+        "industrial"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE_SC",
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Axpo",
+      "aliases": [],
+      "country": "Switzerland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Burckhardt Compression",
+      "aliases": [],
+      "country": "Switzerland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "compressors",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "turbomachinery",
+        "thermal"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Casale",
+      "aliases": [],
+      "country": "Switzerland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "process",
+        "EPC",
+        "chemicals",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "plant",
+        "R&D"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sulzer",
+      "aliases": [],
+      "country": "Switzerland",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "pumps",
+        "rotating-equipment",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "thermal"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Amentum",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "AtkinsRéalis",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "mechanical",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Babcock International",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "defence",
+        "engineering"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Bilfinger Nuclear",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "industrial-services",
+        "engineering"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Cavendish Nuclear",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "decommissioning"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "safety",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "First Light Fusion",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "sme",
+      "sectors": [
+        "fusion",
+        "R&D"
+      ],
+      "fit_tags": [
+        "thermal",
+        "CFD",
+        "R&D",
+        "experimental-validation"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Frazer-Nash Consultancy",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "aerospace",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "systems",
+        "simulation",
+        "consulting"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "GE Vernova Hitachi Nuclear Energy",
+      "aliases": [
+        "GE Hitachi Nuclear Energy"
+      ],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "reactor-systems"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Rolls-Royce",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "propulsion",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "turbomachinery",
+        "fluid-dynamics",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Rolls-Royce SMR",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "SMR",
+        "engineering"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sellafield",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "decommissioning",
+        "waste"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sizewell C",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "new-build",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering",
+        "mechanical"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "UK Atomic Energy Authority",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "research",
+      "sectors": [
+        "fusion",
+        "nuclear",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "CFD",
+        "R&D",
+        "experimental-validation"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "UK National Nuclear Laboratory",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "research",
+      "sectors": [
+        "nuclear",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "R&D",
+        "experimental-validation",
+        "systems"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Urenco",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "fuel-cycle"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Wood",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering",
+        "EPC",
+        "energy",
+        "oil-gas"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "ANIMP",
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Worley",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering",
+        "EPC",
+        "energy",
+        "oil-gas"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "DEME",
+      "aliases": [],
+      "country": "Belgium",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "offshore",
+        "energy",
+        "marine"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Valmet",
+      "aliases": [],
+      "country": "Finland",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial",
+        "process",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "automation"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ANDRA",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "public",
+      "sectors": [
+        "nuclear",
+        "waste-management"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "safety",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Bertin Technologies",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "nuclear",
+        "defence",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "R&D",
+        "systems",
+        "simulation"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Boccard",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial-plants",
+        "nuclear",
+        "process"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "piping",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Eiffage Énergie Systèmes",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "industrial",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Ekium",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "industrial",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Equans",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "energy-services",
+        "industrial",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Fives",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial",
+        "thermal-processes",
+        "engineering"
+      ],
+      "fit_tags": [
+        "thermal",
+        "process",
+        "R&D",
+        "plant"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Onet Technologies",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "decommissioning"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Ponticelli Frères",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial-services",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "plant",
+        "mechanical",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "REEL",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "lifting",
+        "industrial-systems"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "systems",
+        "nuclear"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Setec",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "energy",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "SPIE Nucléaire",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "industrial-services",
+        "electrical"
+      ],
+      "fit_tags": [
+        "systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Vallourec",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "pipes",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "mechanical",
+        "materials",
+        "energy"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Rheinmetall",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "defence",
+        "systems"
+      ],
+      "fit_tags": [
+        "systems",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "RWE",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "power-generation",
+        "renewables"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "thermal",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Uniper",
+      "aliases": [],
+      "country": "Germany",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "power-generation",
+        "energy"
+      ],
+      "fit_tags": [
+        "thermal",
+        "energy-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Damen Shipyards",
+      "aliases": [],
+      "country": "Netherlands",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "shipbuilding",
+        "naval",
+        "energy"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "thermal",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "KGHM",
+      "aliases": [],
+      "country": "Poland",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "industrial",
+        "energy",
+        "nuclear-projects"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "project-engineering",
+        "industrial"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "PGE",
+      "aliases": [],
+      "country": "Poland",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "power-generation",
+        "energy"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "thermal",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "UZINSIDER Engineering",
+      "aliases": [],
+      "country": "Romania",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "industrial"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Amphos 21",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "environment",
+        "consulting"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "safety",
+        "R&D",
+        "consulting"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Enwesa",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "industrial-services"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "plant",
+        "mechanical"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "INGECID",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "engineering",
+        "nuclear",
+        "digital"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Naturgy",
+      "aliases": [],
+      "country": "Spain",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "gas",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "fluid-systems",
+        "thermal"
+      ],
+      "research_basis": [
+        "FORO_ES"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "AECOM",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Arup",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Balfour Beatty",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "infrastructure",
+        "nuclear",
+        "construction"
+      ],
+      "fit_tags": [
+        "project-engineering",
+        "systems",
+        "nuclear"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Jacobs",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Mott MacDonald",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "energy",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "systems",
+        "energy-systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sheffield Forgemasters",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "forgings",
+        "defence"
+      ],
+      "fit_tags": [
+        "materials",
+        "mechanical",
+        "manufacturing",
+        "nuclear"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Studsvik UK",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "waste",
+        "R&D"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "R&D",
+        "process"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "WSP UK",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "Europe",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "energy",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "systems",
+        "project-engineering",
+        "consulting"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Bernard Controls",
+      "aliases": [],
+      "country": "France",
+      "region_group": "Europe",
+      "priority": 3,
+      "scale_hint": "mid",
+      "sectors": [
+        "actuation",
+        "nuclear",
+        "industrial"
+      ],
+      "fit_tags": [
+        "systems",
+        "mechanical",
+        "plant"
+      ],
+      "research_basis": [
+        "GIFEN"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Mammoet",
+      "aliases": [],
+      "country": "Netherlands",
+      "region_group": "Europe",
+      "priority": 3,
+      "scale_hint": "large",
+      "sectors": [
+        "heavy-lift",
+        "industrial",
+        "energy"
+      ],
+      "fit_tags": [
+        "project-engineering",
+        "mechanical"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Bruce Power",
+      "aliases": [],
+      "country": "Canada",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "utilities"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "operations"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Cameco",
+      "aliases": [],
+      "country": "Canada",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "fuel-cycle",
+        "uranium"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "R&D"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Ontario Power Generation",
+      "aliases": [],
+      "country": "Canada",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "utilities",
+        "nuclear",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "operations"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Chiyoda Corporation",
+      "aliases": [],
+      "country": "Japan",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "energy",
+        "process",
+        "LNG"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "IHI Corporation",
+      "aliases": [],
+      "country": "Japan",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "aerospace",
+        "industrial",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "JGC",
+      "aliases": [],
+      "country": "Japan",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "energy",
+        "process"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Mitsubishi Heavy Industries",
+      "aliases": [],
+      "country": "Japan",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "power-generation",
+        "aerospace",
+        "turbomachinery"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "turbomachinery",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Toshiba Energy Systems & Solutions",
+      "aliases": [],
+      "country": "Japan",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "nuclear",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "energy-systems",
+        "systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Doosan Enerbility",
+      "aliases": [],
+      "country": "South Korea",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "power-generation",
+        "turbomachinery"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "turbomachinery",
+        "mechanical"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "KEPCO Engineering & Construction",
+      "aliases": [],
+      "country": "South Korea",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "engineering",
+        "power"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Korea Hydro & Nuclear Power (KHNP)",
+      "aliases": [],
+      "country": "South Korea",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "utilities",
+        "power-generation"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "operations",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Samsung E&A",
+      "aliases": [],
+      "country": "South Korea",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "energy",
+        "process"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Emirates Nuclear Energy Company (ENEC)",
+      "aliases": [],
+      "country": "United Arab Emirates",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "utilities"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "energy-systems",
+        "operations",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Baker Hughes",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "turbomachinery",
+        "oil-gas",
+        "industrial"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "fluid-systems",
+        "process"
+      ],
+      "research_basis": [
+        "ANIMP"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "Bechtel",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "nuclear",
+        "energy"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "process",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "BWX Technologies",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "reactor-components",
+        "defence"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "mechanical",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Fluor",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "nuclear",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "project-engineering",
+        "nuclear"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "GE Aerospace",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "aerospace",
+        "propulsion",
+        "turbomachinery"
+      ],
+      "fit_tags": [
+        "CFD",
+        "thermal",
+        "turbomachinery",
+        "heat-transfer",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "GE Vernova",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "power-generation",
+        "grid",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "thermal",
+        "turbomachinery",
+        "energy-systems",
+        "systems"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": true,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "already_monitored"
+    },
+    {
+      "name": "Holtec International",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "SMR",
+        "waste",
+        "components"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "mechanical",
+        "systems"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Kairos Power",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "advanced-nuclear",
+        "molten-salt-reactor"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "heat-transfer",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "NuScale Power",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "nuclear",
+        "SMR"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Oklo",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "advanced-nuclear",
+        "microreactors"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Sargent & Lundy",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering-consulting",
+        "nuclear",
+        "power"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal",
+        "systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "TerraPower",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "advanced-nuclear",
+        "reactor-development"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D",
+        "systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Westinghouse Electric Company",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "reactor-systems",
+        "fuel"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "NUCLEAREUROPE",
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "X-energy",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 1,
+      "scale_hint": "mid",
+      "sectors": [
+        "advanced-nuclear",
+        "SMR"
+      ],
+      "fit_tags": [
+        "nuclear",
+        "thermal-hydraulics",
+        "R&D",
+        "systems"
+      ],
+      "research_basis": [
+        "NIA_UK"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Hitachi",
+      "aliases": [],
+      "country": "Japan",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "energy",
+        "industrial",
+        "nuclear"
+      ],
+      "fit_tags": [
+        "energy-systems",
+        "systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Saudi Aramco",
+      "aliases": [],
+      "country": "Saudi Arabia",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "oil-gas",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems",
+        "R&D"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Hyundai Engineering",
+      "aliases": [],
+      "country": "South Korea",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "ADNOC",
+      "aliases": [],
+      "country": "United Arab Emirates",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "oil-gas",
+        "energy",
+        "industrial"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "fluid-systems"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "NMDC Energy",
+      "aliases": [],
+      "country": "United Arab Emirates",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "offshore",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "fluid-systems",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Petrofac",
+      "aliases": [],
+      "country": "United Kingdom",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "EPC",
+        "oil-gas",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "thermal",
+        "plant",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Black & Veatch",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering",
+        "energy",
+        "power",
+        "water"
+      ],
+      "fit_tags": [
+        "thermal",
+        "energy-systems",
+        "process",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Burns & McDonnell",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "engineering",
+        "energy",
+        "power"
+      ],
+      "fit_tags": [
+        "thermal",
+        "energy-systems",
+        "project-engineering"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Curtiss-Wright",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "nuclear",
+        "industrial",
+        "flow-control"
+      ],
+      "fit_tags": [
+        "fluid-systems",
+        "mechanical",
+        "nuclear"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    },
+    {
+      "name": "Emerson",
+      "aliases": [],
+      "country": "United States",
+      "region_group": "International",
+      "priority": 2,
+      "scale_hint": "large",
+      "sectors": [
+        "automation",
+        "process",
+        "energy"
+      ],
+      "fit_tags": [
+        "process",
+        "systems",
+        "industrial"
+      ],
+      "research_basis": [
+        "CURATED"
+      ],
+      "notes": "",
+      "already_in_phase1_pilot": false,
+      "official_website": null,
+      "careers_url": null,
+      "ats_provider": null,
+      "board_id": null,
+      "discovery_status": "pending_verification"
+    }
+  ]
+}

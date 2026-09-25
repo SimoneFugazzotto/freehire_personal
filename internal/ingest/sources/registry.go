@@ -157,6 +157,7 @@ func All(c HTTPClient) map[string]Source {
 		NewHiBob(c),
 		NewGem(c),
 		NewSuccessFactors(c),
+		NewInrecruiting(c),
 		NewSelfRecruit(c),
 		// Paced: its per-posting detail fan-out fired ~37k requests in 10 minutes and Teamtailor
 		// 403'd nearly half the fleet (see teamtailorRequestInterval).

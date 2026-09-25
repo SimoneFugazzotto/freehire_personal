@@ -8,9 +8,25 @@ successfully on 2026-09-24: its live listing reported 2,590 rows and the ingest 
 canons; the other 28 are correctly collapsed reposts. The listing contains repeated
 external IDs, so the database count is the meaningful catalogue count.
 
-The current local checkpoint is 7,186 open, canonical, non-private jobs in PostgreSQL
-and 7,186 documents in the Meilisearch `jobs` index. The earlier 4,756 index count was
-recorded before the Thales crawl and is superseded by this measurement.
+The current local checkpoint is 7,566 open jobs, including 7,431 canonical, non-private
+jobs in PostgreSQL. Earlier counts (including 7,186) are historical Phase 1 snapshots and
+are superseded by the Phase 2 recovery measurement.
+
+Phase 2 has completed the Italy-priority-1 cohort from the immutable 269-company research
+seed. Its append-only phase2_ledger.jsonl records each processed target and evidence
+without turning the untrusted seed into a second registry. The cohort contains 59
+organizations: seven were already covered by existing parent or active boards, and two
+new official SuccessFactors sources passed real adapter validation and were onboarded:
+De Nora (jobs.denora.com, five jobs) and RINA (careers.rina.org, 233 jobs).
+
+The local checkpoint is now 7,566 open jobs and 7,431 canonical, non-private jobs in
+PostgreSQL. The search outbox is empty. A targeted recovery pass added a general
+Inrecruiting adapter after verifying its public listing, pagination, and JSON-LD detail
+contract across Ansaldo Energia and Bonatti. Bonatti passed live validation, was onboarded,
+and added nine searchable jobs. Ansaldo Energia exposes the same public tenant but currently
+needs a tenant-level mapping follow-up because the adapter probe did not yield its visible
+postings. Ten companies with confirmed official careers pages but no live public vacancies
+are represented in the ledger as resolved_no_openings rather than discovery failures.
 
 ## Important changes
 
@@ -50,7 +66,7 @@ recorded before the Thales crawl and is superseded by this measurement.
 
 ## Next macro step
 
-Start Phase 2 in a new session from the curated 269-company discovery seed. It is intentionally
-untrusted and has no assumed career URLs, ATS providers, or board identifiers. Process the
-priority-1 cohort in bounded batches: discover the official careers page, detect the ATS,
-validate the live board, then add only confirmed boards to the catalog.
+Continue Phase 2 in seed order with Italy priority 2. The seed is intentionally untrusted
+and has no assumed career URLs, ATS providers, or board identifiers. Continue bounded
+batches: discover the official careers page, detect the ATS, validate the live board,
+then add only confirmed boards to the catalog.
